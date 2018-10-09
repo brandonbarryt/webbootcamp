@@ -13,43 +13,49 @@
     <form action="/sign-in-url" method="post">
         <div>
             <label for="First Name">First Name:</label>
-            <input id="First Name" type="text" required> 
+            <input name="First" id="First Name" type="text" placeholder="Robert" required> 
             <label for="Last Name">Last Name:</label>
-            <input id="Last Name" type="text" required>
+            <input name="Last" id="Last Name" type="text" placeholder="Johnson" required>
         </div>
-    
-    <label for="radio-choice-1">Male</label>
-    <input name= GenderChoice type="radio" id="radio-choice-1" value="Male" />
+        <div>   
+        <label for="Male">Male</label>
+        <input id="Male" name= GenderChoice type="radio"  value="Male" />
 
-    <label for="radio-choice-2">Female</label>
-    <input name= GenderChoice type="radio" id="radio-choice-2" value="Female" />
+        <label for="Female">Female</label>
+        <input id="Female" name= GenderChoice type="radio"  value="Female" />
 
-    <label for="radio-choice-3">Other</label>
-    <input name= GenderChoice type="radio" id="radio-choice-3" value="Other" />
+        <label for="Other">Other</label>
+        <input id="Other" name= GenderChoice type="radio"  value="Other" />
+        </div>
         <div>
-            <label for="your email">Email:</label>
-            <input id="your email" type="email" required>
+            <label for="email">Email:</label>
+            <input name="email" id="email" type="email" placeholder="Email" required>
             <label for="password">Password:</label>
-            <input id="password" type="password" required>
+            <input name="password" id="password" type="password" minlength="8" placeholder="Password" required>
         </div>
 
         <div>
-                <label for="select-birthday">Birthday:</label>
+            <label></label> 
+            Birthday:
                 <select name= "Month" id="select-birthday">
+                  <option value="Month">Month</option>
                   <option value="January">January</option>
                   <option value="February">February</option>
                   <option value="March">March</option>
                 </select>
                 <select name= "Date" id="select-birthday">
-                  <option value="01">01</option>
+                    <option value="Day">Day</option>
+                    <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
                 </select>
                 <select name= "Year" id="select-birthday">
+                  <option value="Year">Year</option>
                   <option value="1980">1980</option>
                   <option value="1981">1981</option>
                   <option value="1982">1982</option>
                 </select>
+            </label>
               </div>
 
         <div>
@@ -57,7 +63,8 @@
                 <input type="checkbox" id="checkbox" />
               </div>
         
-        <button>Submit</button>
+        <Input type=submit>
+
     </form>
 
 </body>
