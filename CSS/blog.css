@@ -6,8 +6,12 @@ font source sans pro */
 
 body {
 
-    border-width: 20px;
-    border: solid #bdc3c7;
+    /* border-width: 20px; */
+    border: 20px solid #bdc3c7;
     width: 80%;
     max-width: 1000px;
+    padding: 20px;
+    margin: 20px auto;
+    font-family:Source Sans Pro;
+    
 }
