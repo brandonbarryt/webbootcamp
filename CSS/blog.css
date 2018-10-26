@@ -3,3 +3,11 @@ date color #3498db
 h2 color #2c3e50
 
 font source sans pro */
+
+body {
+
+    border-width: 20px;
+    border: solid #bdc3c7;
+    width: 80%;
+    max-width: 1000px;
+}
