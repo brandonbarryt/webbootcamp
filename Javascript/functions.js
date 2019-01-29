@@ -19,3 +19,12 @@ function factorial(fact) {
     return result
 }
 
+//kebabToSnake
+function kebabToSnake(KebabStr) {
+    var SnakeStr = KebabStr.replace(/-/g, "_");
+return SnakeStr
+}
+
+    
+
+
