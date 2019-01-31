@@ -21,6 +21,7 @@ function factorial(fact) {
 
 //kebabToSnake
 function kebabToSnake(KebabStr) {
+    //Replace all dashes "-" with "_"
     var SnakeStr = KebabStr.replace(/-/g, "_");
 return SnakeStr
 }
