@@ -6,7 +6,15 @@ var input = prompt ("What can I do for you today?");
 
 
 
-function max() {}
+function max(array) {
+    var maximum = array[0];
+    for( var i = 1; i < array.length; i ++){
+        if(array[i] > maximum){ 
+            maximum = array[i];}
+    }
+    return maximum;
+}
+
 
 function isUniform() {
     var first = array[0]
@@ -14,7 +22,7 @@ function isUniform() {
         if(array[i] !== first) {
             return false;
         }
-    } 
+    }  
         return true;
 }
 
@@ -24,6 +32,13 @@ function printReverse() {
     }
 }
 
-function sumArray() {
-    
+function sumArray(array) {
+    var sum = 0;
+    array.forEach(function(number) {
+        sum += number;
+    });
+    return sum;
+   
 }
+
+
