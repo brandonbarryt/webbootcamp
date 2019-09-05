@@ -3,7 +3,7 @@ var  p2button = document.getElementById ("p2");
 var p1display = document.querySelector ("#p1display");
 var p2display = document.querySelector ("#p2display");
 var resetbutton = document.getElementById("reset");
-var numInput = document.getElementById ("input");
+var numInput = document.querySelector("#input");
 var winningscoredisplay = document.querySelector("p span");
 var gameover = false;
 var winningscore = 5;
@@ -48,6 +48,7 @@ function reset(){
     p2display.textContent = 0;
     p1display.classList.remove("winner");
     p2display.classList.remove("winner");
-    gameover = false; 
+    gameover = false;
+    
 };
 
